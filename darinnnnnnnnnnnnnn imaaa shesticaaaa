@@ -1,0 +1,30 @@
+int years = int.Parse(Console.ReadLine());
+
+if (years < 10)
+{
+    Console.WriteLine("Children");
+}
+else if (years >= 10 && years <= 17)
+{
+    if (years < 14)
+    {
+        Console.WriteLine("Teenagers - little group");
+    }
+    else
+    {
+        Console.WriteLine("Teenagers - big group");
+    }
+}
+else if (years >= 18)
+{
+    if (years < 40)
+    {
+        Console.WriteLine("Adults");
+    }
+    else
+    {
+        Console.WriteLine("Veterains");
+    }
+
+}
+
