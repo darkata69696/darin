@@ -1,0 +1,61 @@
+int n1 = int.Parse(Console.ReadLine());
+int n2 = int.Parse(Console.ReadLine());
+string simbol = Console.ReadLine();
+double ostatuk = 0.0;
+double result = 0.0;
+string vid = "";
+
+if (simbol == "+")
+{
+    result = n1 + n2;
+    if (result % 2 == 0)
+    {
+        vid = "chetno";
+    }
+    else { vid = "nechetno"; }
+    Console.WriteLine($"{n1}{simbol}{n2}={result}-{vid}");
+
+}
+else if (simbol == "-")
+{
+    result = n1 - n2;
+    if (result % 2 == 0)
+    {
+        vid = "chetno";
+    }
+    else { vid = "nechetno"; }
+    Console.WriteLine($"{n1}{simbol}{n2}={result}-{vid}");
+}
+else if (simbol == "*")
+{
+    result = n1 - n2;
+    if (result % 2 == 0)
+    {
+        vid = "chetno";
+    }
+    else { vid = "nechetno"; }
+    Console.WriteLine($"{n1}{simbol}{n2}={result}-{vid}");
+}
+else if (simbol == "/")
+{
+
+    if (result % 2 == 0)
+    {
+        vid = "chetno";
+    }
+    else { vid = "nechetno"; }
+    Console.WriteLine($"{n1}{simbol}{n2}={result}-{vid}");
+}
+else if (simbol == "%")
+{
+    result = n1 - n2;
+    if (result % 2 == 0)
+    {
+        vid = "chetno";
+    }
+    else { vid = "nechetno"; }
+    Console.WriteLine($"{n1}{simbol}{n2}={result}-{vid}");
+}
+
+
+
