@@ -1,0 +1,1066 @@
+
+//int firsttime = int.Parse(Console.ReadLine());
+//int secondtime = int.Parse(Console.ReadLine());
+//int thirdtime = int.Parse(Console.ReadLine());
+//int totaltime = firsttime + secondtime + thirdtime;
+//int minuti = totaltime / 60;
+//int secundi = totaltime % 60;
+
+//if (secundi < 10)
+//{
+//    Console.WriteLine($"{minuti}:0{secundi}");
+//}
+//else
+//{
+//    Console.WriteLine($"{minuti}{secundi}");
+//}
+
+
+
+//int number = int.Parse(Console.ReadLine());
+
+//double bonus = 0.0;
+
+//if (number <= 100)
+//{
+//    bonus = 5;
+//}
+//else if (number > 1000)
+//{
+//    bonus = number + 0.1;
+//}
+//else
+//{
+//    bonus = number + 0.2;
+//}
+//if (number % 2 == 0)
+//{
+//    bonus = bonus + 1;
+//}
+//else if (number % 10 == 5)
+//{
+//    bonus += 2;
+//}
+//Console.WriteLine(bonus);
+//Console.WriteLine(number + bonus);
+
+
+//int hour = int.Parse(Console.ReadLine());
+//int minute = int.Parse(Console.ReadLine());
+
+//minute += 15;
+////minute = minute + 15;
+//if (minute> 60)
+//{
+//    hour=hour+1;
+//    minute-=60;
+//}
+//if (hour>=24)
+//{
+//    hour = 0;
+//}
+//if (minute<10)
+//{
+//    Console.WriteLine($"{hour}:0{minute}");
+//}
+//else
+//{
+//    Console.WriteLine($"{hour}:{minute}");
+//}
+
+
+//double cena_na_holiday = double.Parse(Console.ReadLine());
+//int puzle = int.Parse(Console.ReadLine());
+//int spek_kukle = int.Parse(Console.ReadLine());
+//int p_meche = int.Parse(Console.ReadLine());
+//int broi_minoni = int.Parse(Console.ReadLine());
+//int broi_kamoni = int.Parse(Console.ReadLine());
+
+//int total = puzle + spek_kukle + p_meche + broi_minoni + broi_kamoni;
+//double sum = puzle * 2.60 + spek_kukle * 3 + p_meche * 4.10 + broi_minoni * 8.20 + broi_kamoni * 2;
+
+//if (total> 50)
+//{
+//    sum = sum- (sum*0.25);
+//}
+//Console.WriteLine(sum);
+//double naem = 0.10*sum;
+//double pechalba = sum - naem;
+
+//if (pechalba>cena_na_holiday )
+//{
+//    double moneyleft = pechalba - cena_na_holiday;
+//    Console.WriteLine($"Yes! {moneyleft} lv left.");
+//}
+//else
+//{
+//    double money_not_enough = cena_na_holiday - pechalba;
+//    Console.WriteLine($"Not enough money! {money_not_enough} lv needed.");
+//}
+
+
+
+//double biujet = double.Parse(Console.ReadLine());
+//int statsiti = int.Parse(Console.ReadLine());
+//double obleklo = double.Parse(Console.ReadLine());
+
+//double dekor_sum = 0.10 * biujet;
+//double obleklo_sum = statsiti * obleklo;
+//double sum_for_film = dekor_sum + obleklo_sum;
+
+//if (sum_for_film > biujet)
+//{
+//    double nedostigashti_pari = sum_for_film - biujet;
+//    Console.WriteLine($"not enought money!");
+//    Console.WriteLine($"Wingard starts filming with {nedostigashti_pari} leva left.");
+//}
+//else 
+//{
+//    double ostavashti_pari = biujet - sum_for_film;
+//    Console.WriteLine($"Action!");
+//    Console.WriteLine($"Wingard starts filming with {ostavashti_pari} leva left.");
+//}
+
+
+
+
+
+//double recordInSeconds = double.Parse(Console.ReadLine());
+//double distanceInMeters = double.Parse(Console.ReadLine());
+//double timePerMeter = double.Parse(Console.ReadLine());
+//double delay = Math.Floor(distanceInMeters / 15) * 12.5;
+//double ivanTime = distanceInMeters * timePerMeter + delay;
+
+//if (ivanTime < recordInSeconds)
+//{
+//    Console.WriteLine($"Yes, he succeeded! The new world record is {ivanTime:F2} seconds.");
+//}
+//else
+//{
+//    double difference = ivanTime - recordInSeconds;
+//    Console.WriteLine($"No, he failed! He was {difference:F2} seconds slower.");
+//}
+
+//1.	Бюджетът на Петър - реално число в интервала [0.0…100000.0]
+//2.	Броят видеокарти - цяло число в интервала [0…100]
+//3.	Броят процесори - цяло число в интервала [0…100]
+//4.	Броят рам памет - цяло число в интервала [0…100]
+
+
+//double biujet = double.Parse(Console.ReadLine());
+//int videokarti = int.Parse(Console.ReadLine());
+//int procesori = int.Parse(Console.ReadLine());
+//int ram = int.Parse(Console.ReadLine());
+
+//double video_sum = videokarti * 250;
+//double suma_za_procesor = video_sum * 0.35;
+////double suma_za_procesori = 175;
+//double cenazaram = 0.10 * video_sum;
+//double sumazaram = 3 * cenazaram;
+//double obshta = video_sum + suma_za_procesor +sumazaram;
+
+//if (videokarti > procesori) 
+//{
+//    obshta = obshta - (obshta * 0.15);
+
+//}
+
+//if (biujet> obshta)
+//{
+//    double money_left = biujet - obshta;
+//    Console.WriteLine($"You have {money_left}leva left");
+//}
+//else
+//{
+//    double money_need = obshta - biujet;
+//    Console.WriteLine($"Not enough money! You need {money_need} leva more!");
+//}
+
+
+//string ime_na_serial = Console.ReadLine();
+//int produljitelnost =int.Parse(Console.ReadLine());
+//int p_pochivka = int.Parse(Console.ReadLine());
+
+//double  time_lunch = p_pochivka  / 8.0;
+//double   otdih = p_pochivka / 4.0;
+//double ostanalo_vreme = p_pochivka - time_lunch - otdih;
+
+//if (ostanalo_vreme >= produljitelnost)
+//{
+//    double enough_time = ostanalo_vreme - produljitelnost; 
+//    Console.WriteLine($"You have enough time to watch {ime_na_serial} and left with {enough_time} minutes free time.");
+//}
+//else
+//{
+//    double not_enought = produljitelnost - ostanalo_vreme ;
+//    Console.WriteLine($"You don't have enough time to watch {ime_na_serial}, you need {Math.Ceiling (not_enought)} more minutes.");
+//}
+
+
+
+//int vreme_zasnumane = int.Parse(Console.ReadLine()); 
+//int number_scenes = int.Parse(Console.ReadLine()); 
+//int time_per_scene = int.Parse(Console.ReadLine());     
+
+
+//double preparationTime = vreme_zasnumane * 0.15;
+
+//double total_time_needed = number_scenes * time_per_scene + preparationTime;
+
+
+//if (total_time_needed <= vreme_zasnumane)
+//{
+//    double time_left = Math.Round(vreme_zasnumane - total_time_needed);
+//    Console.WriteLine($"You managed to finish the movie on time! You have {time_left} minutes left!");
+//}
+//else
+//{
+//    double time_needed = Math.Round(total_time_needed - vreme_zasnumane);
+//    Console.WriteLine($"Time is up! To complete the movie you need {time_needed} minutes.");
+//}
+
+
+
+
+//int neededHours = int.Parse(Console.ReadLine());
+//int days = int.Parse(Console.ReadLine());
+//int workers = int.Parse(Console.ReadLine());
+//double workDays = days - (days * 0.1);
+
+//double totalHours = workDays * 8;
+
+//double overtime = workers * (2 * days);
+
+
+//double totalWorkHours = Math.Floor(totalHours + overtime);
+
+//if (totalWorkHours >= neededHours)
+//{
+//    Console.WriteLine($"Yes!{Math.Floor(totalWorkHours - neededHours)} hours left.");
+//}
+//else
+//{
+//    Console.WriteLine($"Not enough time!{Math.Floor(neededHours - totalWorkHours)} hours needed.");
+//}
+
+
+
+//string fuel_type = Console.ReadLine();  
+//double liters = double.Parse(Console.ReadLine()); 
+
+
+//if (fuel_type == "Diesel" || fuel_type == "Gasoline" || fuel_type == "Gas")
+//{
+
+//    if (liters >= 25)
+//    {
+//        Console.WriteLine($"You have enough {fuel_type.ToLower()}.");
+//    }
+//    else
+//    {
+//        Console.WriteLine($"Fill your tank with {fuel_type.ToLower()}!");
+//    }
+//}
+//else
+//{
+
+//    Console.WriteLine("Invalid fuel!");
+//}
+
+
+
+
+
+
+
+//string fruit = Console.ReadLine();
+//switch (fruit)
+//{
+//    case "apple":
+//    case "banana":
+//    case "kiwi":
+//    case "cherry":
+//    case "lemon":
+//        Console.WriteLine("fruits");
+//       break;
+//    case "tomato":
+//    case "cucumber":
+//    case "pepper":
+//    case "carrot":
+//        Console.WriteLine("vegetables");
+//        break;
+// default:
+//        Console.WriteLine("unkown");
+//        break;
+//}
+
+
+
+
+//int age = int.Parse(Console.ReadLine());
+//string gender = Console.ReadLine();
+
+//if  (gender == "f")
+//{
+//    if (age >= 16)
+//    {
+//        Console.WriteLine("Ms");
+//    }
+//    else
+//    {
+//        Console.WriteLine("Miss");
+//    }
+//}
+//else if (gender == "m")
+//{
+//    if (age >= 16)
+//    {
+//        Console.WriteLine("Mr");
+//    }
+//    else
+//    {
+//        Console.WriteLine("Master");
+//    }
+//}
+
+
+//int a = int.Parse(Console.ReadLine());
+
+//if (a > -100 && a < 100 && a != 0)
+//{
+//    Console.WriteLine("yes");
+//}
+//else
+//{
+//    Console.WriteLine("no");
+//}
+
+
+
+
+
+
+//string mamal = Console.ReadLine();
+// switch (mamal)
+//{
+//    case "dog":
+//        Console.WriteLine("mamals");
+//        break;
+//    case "snake":
+//        Console.WriteLine("reptile");
+//        break;
+//    default:
+//        Console.WriteLine("unknown");
+//        break;
+
+//}
+
+
+
+
+
+
+
+
+//string produkt = Console.ReadLine();
+//string grad = Console.ReadLine();
+//double kol = double.Parse(Console.ReadLine());
+//double cena = 0;
+
+//if (grad == "Sofia")
+//{
+//    switch (produkt)
+//    {
+//        case "coffee":
+//            cena = 0.50;
+//            break;
+//        case "water":
+//            cena = 0.80;
+//            break;
+//        case "beer":
+//            cena = 1.20;
+//            break;
+//        case "sweets":
+//            cena = 1.45;
+//            break;
+//        case "peanuts":
+//            cena = 1.60;
+//            break;
+//        default:
+//            break;
+//    }
+//}
+//else if (grad == "Plovdiv")
+//{
+//    switch (produkt)
+//    {
+//        case "coffee":
+//            cena = 0.40;
+//            break;
+//        case "water":
+//            cena = 0.70;
+//            break;
+//        case "beer":
+//            cena = 1.15;
+//            break;
+//        case "sweets":
+//            cena = 1.30;
+//            break;
+//        case "peanuts":
+//            cena = 1.50;
+//            break;
+//            default :
+//            break;
+//    }
+
+//}
+//else if (grad =="Varna")
+//{
+//    switch (produkt) 
+//    {
+//        case "coffee":
+//            cena = 0.45;
+//            break;
+//        case "water":
+//            cena = 0.70;
+//            break;
+//        case "beer":
+//            cena = 1.10;
+//            break;
+//        case "sweets":
+//            cena = 1.35;
+//            break;
+//        case "peanuts":
+//            cena = 1.55;
+//            break;
+//        default:
+//            break;
+//    }
+//}
+
+//double sum = cena * kol;
+//Console.WriteLine(sum);
+
+
+//int hour = int.Parse(Console.ReadLine());
+//string day = Console.ReadLine();
+//{
+//    {
+//        if (hour >= 10 && hour <= 18 &&
+//            (day == "Monday" || day == "Tuesday" || day == "Wednesday" ||
+//             day == "Thursday" || day == "Friday" || day == "Saturday"))
+//        {
+//            Console.WriteLine("open");
+//        }
+//        else
+//        {
+//            Console.WriteLine("closed");
+//        }
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+//int chas_denonoshtieb = int.Parse(Console.ReadLine());
+//string day = Console.ReadLine();
+
+
+
+
+
+
+
+
+
+
+//        int hour = int.Parse(Console.ReadLine());
+//        string day = Console.ReadLine();
+
+//if (hour >= 10 && hour <= 18)
+//{
+//    if (day == "Monday" || day == "Tuesday" || day == "Wednesday" ||
+//     day == "Thursday" || day == "Friday" || day == "Saturday")
+//    {
+//        Console.WriteLine("open");
+//    }
+//}
+//else
+//{
+//    Console.WriteLine("closed");
+//}
+
+
+
+
+
+
+
+
+
+
+
+//{
+
+//    {
+//        int number = int.Parse(Console.ReadLine());
+
+//        if ((number >= 100 && number <= 200) || number == 0)
+//        {
+
+//        }
+//        else
+//        {
+//            Console.WriteLine("invalid");
+//        }
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+//{
+
+//    {
+//        string city = Console.ReadLine();
+//        double sales = double.Parse(Console.ReadLine());
+//        double commission = -1;
+
+//        if (sales < 0)
+//        {
+//            Console.WriteLine("error");
+//            return;
+//        }
+
+//        if (city == "Sofia")
+//        {
+//            if (sales <= 500) commission = 0.05;
+//            else if (sales <= 1000) commission = 0.07;
+//            else if (sales <= 10000) commission = 0.08;
+//            else commission = 0.12;
+//        }
+//        else if (city == "Varna")
+//        {
+//            if (sales <= 500) commission = 0.045;
+//            else if (sales <= 1000) commission = 0.075;
+//            else if (sales <= 10000) commission = 0.10;
+//            else commission = 0.13;
+//        }
+//        else if (city == "Plovdiv")
+//        {
+//            if (sales <= 500) commission = 0.055;
+//            else if (sales <= 1000) commission = 0.08;
+//            else if (sales <= 10000) commission = 0.12;
+//            else commission = 0.145;
+//        }
+//        else
+//        {
+//            Console.WriteLine("error");
+//            return;
+//        }
+
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//using System.ComponentModel.Design;
+
+//string plod = Console.ReadLine();
+//string den = Console.ReadLine();
+//double kolichestvo = double.Parse(Console.ReadLine());
+//double cena = 0;
+
+//if ()
+//{
+//    switch (plod)
+//    {
+//        case "apple":
+//            cena = 1.20;
+//            break;
+//        case "banana":
+//            cena = 2.50;
+//            break;
+//        case "orange":
+//            cena = 0.85;
+//            break;
+//        case "grapefruit":
+//            cena = 1.45;
+//            break;
+//        case "kiwi":
+//            cena = 2.70;
+//            break;
+//        case "pinaple":
+//            cena = 5.50;
+//            break;
+//        case "grapes":
+//            cena = 3.85;
+//            break;
+
+
+
+//    }
+//}
+
+// switch(plod)
+//{
+//    case "apple":
+//        cena = 1.20;
+//     break;
+//    case "banana":
+//        cena = 2.50;
+//        break;
+//    case "orange":
+//        cena = 0.85;
+//        break;
+//    case "grapefruit":
+//        cena = 1.45;
+//        break;
+//    case "kiwi":
+//        cena = 2.70;
+//        break;
+//    case "pinaple":
+//        cena = 5.50;
+//        break;
+//    case "grapes":
+//        cena = 3.85;
+//        break;
+
+
+
+//}  
+
+
+
+
+
+//string grad = Console.ReadLine();
+//double prodajbi = double.Parse(Console.ReadLine());
+//double ko = 0.0;
+
+//if (grad == "Sofia")
+//{
+//    if (prodajbi >= 0 && prodajbi <= 500) 
+//    {
+//        ko = prodajbi * 0.05;
+//        Console.WriteLine($"{ko:F2}");
+//    }
+//    else if (prodajbi > 500 && prodajbi <=1000 )
+//    {
+//        ko = prodajbi * 0.07;
+//        Console.WriteLine($"{ko:F2}");
+//    } 
+//    else if (prodajbi >1000 && prodajbi <=10000)
+//    {
+//        ko = prodajbi * 0.08;
+//        Console.WriteLine($"{ko:F2}");
+//    }
+//    else if (prodajbi > 10000)
+//    {
+//        ko = prodajbi * 0.12;
+//        Console.WriteLine($"{ko:F2}");
+//    }
+//}
+//else if  (grad == "Varna")
+//{
+//    if (prodajbi >= 0 && prodajbi <= 500)
+//    {
+//        ko = prodajbi * 0.045;
+//        Console.WriteLine($"{ko:F2}");
+//    }
+//    else if (prodajbi > 500 && prodajbi <= 1000)
+//    {
+//        ko = prodajbi * 0.075;
+//        Console.WriteLine($"{ko:F2}");
+
+
+//    }
+//    else if (prodajbi > 1000 && prodajbi <= 10000)
+//    {
+//        ko = prodajbi * 0.10;
+//        Console.WriteLine($"{ko:F2}");
+//    }
+//    else if (prodajbi > 10000)
+//    {
+//        ko = prodajbi * 0.13;
+//        Console.WriteLine($"{ko:F2}");
+//    }
+//}
+//else if (grad == "Plovdiv")
+//{
+//    if (prodajbi >= 0 && prodajbi <= 500)
+//    {
+//        ko = prodajbi * 0.055;
+//        Console.WriteLine($"{ko:F2}");
+//    }
+//    else if (prodajbi > 500 && prodajbi <= 1000)
+//    {
+//        ko = prodajbi * 0.08;
+//        Console.WriteLine($"{ko:F2}");
+//    }
+//    else if (prodajbi > 1000 && prodajbi <= 10000)
+//    {
+//        ko = prodajbi * 0.12;
+//        Console.WriteLine($"{ko:F2}");
+//    }
+//    else if (prodajbi > 10000)
+//    {
+//        ko = prodajbi * 0.145;
+//        Console.WriteLine($"{ko:F2}");
+//    }
+//}else
+//{
+//    Console.WriteLine("error");
+//}
+
+
+
+
+
+//{
+
+//    {
+//        string type = Console.ReadLine();
+//        int rows = int.Parse(Console.ReadLine());
+//        int cols = int.Parse(Console.ReadLine());
+
+//        double income = 0.0;
+//        int seats = rows * cols;
+
+//        if (type == "Premiere")
+//        {
+//            income = seats * 12.00;
+//        }
+//        else if (type == "Normal")
+//        {
+//            income = seats * 7.50;
+//        }
+//        else if (type == "Discount")
+//        {
+//            income = seats * 5.00;
+//        }
+
+//        Console.WriteLine($"{income:f2} leva");
+//    }
+//}
+
+
+
+
+//double degrees = double.Parse(Console.ReadLine());
+//string timeOfday = Console.ReadLine();
+//string outfit= "";
+//string shoes = "";
+
+//if (degrees >= 10 && degrees <= 18)
+//{
+//    if (timeOfday == "Morning")
+//    {
+//        outfit = "sweatshirt";
+//        shoes = "sneakers";
+//        Console.WriteLine($"It's {degrees} degrees, get your {outfit} and {shoes}.");
+
+//    }
+//    else if (timeOfday == "Afrenoon" || timeOfday == "Evening")
+//    {
+//        outfit = "shirt";
+//        shoes = "moccasins";
+//        Console.WriteLine($"It's {degrees} degrees, get your {outfit} and {shoes}.");
+//    }
+//}
+//else if (degrees < 18 &&  degrees <=24)
+//{
+//    if (timeOfday == "Morning")
+//    {
+//        outfit = "shirt";
+//        shoes = "moccasins";
+//        Console.WriteLine($"It's {degrees} degrees, get your {outfit} and {shoes}.");
+//    }
+//    else if (timeOfday == "Afternoon"  )
+//    {
+//        outfit = "T-shirt";
+//        shoes = "sandals";
+//        Console.WriteLine($"It's {degrees} degrees, get your {outfit} and {shoes}.");
+//    }
+//    else if (timeOfday == "Evening")
+//    {
+//        outfit = "shirt";
+//        shoes = "moccasins";
+//        Console.WriteLine($"It's {degrees} degrees, get your {outfit} and {shoes}.");
+//    }
+//}
+//else if (degrees >= 25)
+//{
+//    if (timeOfday == "Morning")
+//    {
+//        outfit = "T-shirt";
+//        shoes = "sandals";
+//        Console.WriteLine($"It's {degrees} degrees, get your {outfit} and {shoes}.");
+//    }
+//    else if (timeOfday == "Afternoon")
+//    {
+//        outfit = "swimsuit";
+//        shoes = "barefoot";
+//        Console.WriteLine($"It's {degrees} degrees, get your {outfit} and {shoes}.");
+//    }
+//    else if (timeOfday == "Evening")
+//    {
+//        outfit = "shirt";
+//        shoes = "moccasins";
+//        Console.WriteLine($"It's {degrees} degrees, get your {outfit} and {shoes}.");
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+//{
+
+//    {
+//        string flowerType = Console.ReadLine();
+//        int count = int.Parse(Console.ReadLine());
+//        double budget = double.Parse(Console.ReadLine());
+
+//        double price = 0;
+
+//        switch (flowerType)
+//        {
+//            case "Roses":
+//                price = 5;
+//                if (count > 80) price *= 0.90;  
+//                break;
+
+//            case "Dahlias":
+//                price = 3.80;
+//                if (count > 90) price *= 0.85;   
+//                break;
+
+//            case "Tulips":
+//                price = 2.80;
+//                if (count > 80) price *= 0.85;   
+//                break;
+
+//            case "Narcissus":
+//                price = 3;
+//                if (count < 120) price *= 1.15; 
+//                break;
+
+//            case "Gladiolus":
+//                price = 2.50;
+//                if (count < 80) price *= 1.20;  
+//                break;
+//        }
+
+//        double totalCost = price * count;
+
+//        if (budget >= totalCost)
+//        {
+//            double moneyLeft = budget - totalCost;
+//            Console.WriteLine(
+//                $"Hey, you have a great garden with {count} {flowerType} and {moneyLeft:F2} leva left.");
+//        }
+//        else
+//        {
+//            double moneyNeeded = totalCost - budget;
+//            Console.WriteLine( $"Not enough money, you need {moneyNeeded:F2} leva more.");
+//        }
+//    }
+//}
+
+
+
+
+//using System.Data.SqlTypes;
+
+//int budjet = int.Parse(Console.ReadLine());
+//string season = Console.ReadLine();
+//int br_ribari = int.Parse(Console.ReadLine());
+//double price = 0.0;
+
+//if (season == "Spring")
+//{
+//    price = 3000;
+//    if (br_ribari <= 6)
+//    {
+//        price = price - (price * 0.10);
+//    }
+
+//}
+//else if (season == "Summer" || season == "Autum")
+//{
+//    price = 4200;
+//    if (br_ribari > 7 || br_ribari <= 11)
+//    {
+//        price = price - (price * 0.15);
+//    }
+//}
+//else if (season == "Winter")
+//{
+//    price = 2600;
+//    if (br_ribari > 12)
+//    {
+//        price = price - (price * 0.25);
+//    }
+//}
+//if (br_ribari % 2 == 0 && season !="Autum")
+//{
+//    price = price - (price * 0.05);
+//}
+
+//if (budjet > price)
+//{
+//    double moneyLeft = budjet - price;
+//    Console.WriteLine($"Yes! You have {moneyLeft} leva left.");
+//}
+//else
+//{
+//    double moneyNeed = price - budjet;
+//    Console.WriteLine($"Not enough money! You need {moneyNeed} leva.");
+
+//}
+
+
+
+
+
+
+//int vekove = int.Parse(Console.ReadLine());
+//int years = vekove * 100;
+//int days = years * 365;
+//int hours = days * 24;
+//int minutes = hours * 60;
+//Console.WriteLine(vekove + "Vekove =" + years + "Years = " + days + "Days =" + hours + "Hours =" + minutes + "minutes =");
+
+
+
+
+//using System.ComponentModel.Design;
+
+//int n1 = int.Parse(Console.ReadLine());
+//int n2 = int.Parse(Console.ReadLine());
+//string simbol = Console.ReadLine();
+//double ostatuk = 0.0;
+//double result = 0.0;
+//string vid = "";
+
+//if (simbol == "+")
+//{
+//    result = n1 + n2;
+//    if (result % 2 == 0)
+//    {
+//        vid = "chetno";
+//    }
+//    else { vid = "nechetno"; }
+//    Console.WriteLine($"{n1}{simbol}{n2}={result}-{vid}");
+
+//}
+//else if (simbol == "-")
+//{
+//    result = n1 - n2;
+//    if (result % 2 == 0)
+//    {
+//        vid = "chetno";
+//    }
+//    else { vid = "nechetno"; }
+//    Console.WriteLine($"{n1}{simbol}{n2}={result}-{vid}");
+//}
+//else if (simbol == "*")
+//{
+//    result = n1 - n2;
+//    if (result % 2 == 0)
+//    {
+//        vid = "chetno";
+//    }
+//    else { vid = "nechetno"; }
+//    Console.WriteLine($"{n1}{simbol}{n2}={result}-{vid}");
+//}
+//else if (simbol == "/")
+//{
+
+//    if (result % 2 == 0)
+//    {
+//        vid = "chetno";
+//    }
+//    else { vid = "nechetno"; }
+//    Console.WriteLine($"{n1}{simbol}{n2}={result}-{vid}");
+//}
+//else if (simbol == "%")
+//{
+//    result = n1 - n2;
+//    if (result % 2 == 0)
+//    {
+//        vid = "chetno";
+//    }
+//    else { vid = "nechetno"; }
+//    Console.WriteLine($"{n1}{simbol}{n2}={result}-{vid}");
+//}
+
+
+
+
+
+
+
+
+
+//int years = int.Parse(Console.ReadLine());
+
+//if (years < 10)
+//{
+//    Console.WriteLine("Children");
+//}
+//else if (years >= 10 && years <= 17)
+//{
+//    if (years < 14)
+//    {
+//        Console.WriteLine("Teenagers - little group");
+//    }
+//    else
+//    {
+//        Console.WriteLine("Teenagers - big group");
+//    }
+//}
+//else if (years >= 18)
+//{
+//    if (years < 40)
+//    {
+//        Console.WriteLine("Adults");
+//    }
+//    else
+//    {
+//        Console.WriteLine("Veterains");
+//    }
+
+//}
+
+
+
+
